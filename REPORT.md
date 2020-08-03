@@ -122,7 +122,6 @@ Other actor-critic algorithms can also be used to build other two agents model, 
 * PPO - Proximal Policy Optimization
 * D4PG - Distributed Distributional Deterministic Policy Gradients
 
-Some of them, for example, using D4PG likely performs better. The two agents model can be simplified by using only one agent. The agent plays with itself and self learns.
+Some of them, for example, using D4PG likely performs better. 
 
-
-
+The two agents model can be simplified by using only one agent. The agent plays with itself and self learns.
