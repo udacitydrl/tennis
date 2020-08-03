@@ -12,7 +12,7 @@ The observation space consists of 8 variables corresponding to the position and 
 The environment is considered solved, when the average (over 100 episodes) of those scores is at least +0.5.
 To meet the requires, two agents are created using he Deep Deterministic Policy Gradient algorithm (DDPG) [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971).
 
-The two DDPG agents successfully solve the environment after 124 episodes.
+The two DDPG agents successfully solve the environment after 1958 episodes.
 
 
 ## Brief overview of DDPG algorithm
@@ -85,7 +85,7 @@ The model runs reasonably fast.  The graph shows the rewards per episode
 
 ![scores](scores.png)
 
-The average scores per 100 episodes as shown as follows. The model solves the environment after 124 episodes. The agent receives average score more than 30 over the last 100 episode.  
+The average scores per 100 episodes as shown as follows. The model solves the environment after 1985 episodes. The agent receives average score more than 30 over the last 100 episode.  
 
 ```
 Episode 100	Average Score: -0.00
