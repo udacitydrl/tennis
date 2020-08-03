@@ -13,17 +13,10 @@ In the Tennis environment, a reward of +0.1 is provided for each step if an agen
 
 The observation space consists of 8 variables corresponding to the position and velocity of the ball and racket. Each agent receives its own, local observation. Two continuous actions are available, corresponding to movement toward (or away from) the net, and jumping.
 
+The environment is considered solved, when the average (over 100 episodes) of those scores is at least +0.5.
+To meet the requires, two agents are created using he Deep Deterministic Policy Gradient algorithm (DDPG) [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971).
+The multiagent model successfully solves the environment after 124 episodes.
 
-In Reacher environment a reward of +0.1 is provided for each step that the agent's hand is in the goal location. 
-Thus, the goal of the agent is to maintain its position at the target location for as many time steps as possible.
-
-The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities 
-of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. 
-Every entry in the action vector should be a number between -1 and 1.
-
-The project requires that the agent must get an average score of +30 over 100 consecutive episodes. 
-To meet the requirement, the Deep Deterministic Policy Gradient algorithm (DDPG) [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971) is implemented. 
-The model successfully solves the environment after 124 episodes.
 
 ## Brief overview of DDPG algorithm
 DDPG is an algorithm which cocurrently learns an action and Q-value and consists of an actor and a critic network. 
