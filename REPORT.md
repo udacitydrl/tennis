@@ -67,7 +67,7 @@ An experience is a named tuple consisting of state, action, reward, next state a
 In addition, Ornstein-Uhlenbeck process is used as well.
 
 The model can be configured differently by different configurations using Config class, for example,  by selecting  different number of hidden layers and choosing different unit sizes for hidden layers. 
-After some parameter tuning, actor_units=critic_units=[128, 128] is selected in the final run.
+After some parameter tuning, actor_units=critic_units=[256, 256] is selected in the final run.
 
 ## Hyper parameters
 
@@ -81,11 +81,11 @@ Other hyper parameters used in the model are
 * Learning rate of the critic: 0.0001 
 
 ## Results
-The model runs reasonably fast.  The graph shows the rewards per episode 
+The graph shows the rewards per episode 
 
 ![scores](scores.png)
 
-The average scores per 100 episodes as shown as follows. The model solves the environment after 1985 episodes. The agent receives average score more than 30 over the last 100 episode.  
+The average scores per 100 episodes as shown as follows. The model solves the environment after 1985 episodes. The agent receives average score more than 0.5 over the last 100 episode.  
 
 ```
 Episode 100	Average Score: -0.00
