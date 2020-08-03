@@ -81,7 +81,7 @@ Other hyper parameters used in the model are
 * Learning rate of the critic: 0.0001 
 
 ## Results
-The graph shows the rewards per episode 
+The model learns very slow in the first 1500 eposodes. Afterward, it gradually learns to play better. The graph shows the rewards per episode 
 
 ![scores](scores.png)
 
