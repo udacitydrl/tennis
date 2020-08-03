@@ -88,10 +88,28 @@ The model runs reasonably fast.  The graph shows the rewards per episode
 The average scores per 100 episodes as shown as follows. The model solves the environment after 124 episodes. The agent receives average score more than 30 over the last 100 episode.  
 
 ```
-Episode 100	Average Score: 4.88
-Episode 200	Average Score: 24.14
-Episode 224	Average Score: 30.01
-Environment solved in 124 episodes!	Average Score: 30.01
+Episode 100	Average Score: -0.00
+Episode 200	Average Score: -0.00
+Episode 300	Average Score: -0.00
+Episode 400	Average Score: -0.00
+Episode 500	Average Score: -0.00
+Episode 600	Average Score: -0.00
+Episode 700	Average Score: -0.00
+Episode 800	Average Score: -0.00
+Episode 900	Average Score: -0.00
+Episode 1000	Average Score: -0.00
+Episode 1100	Average Score: 0.000
+Episode 1200	Average Score: -0.00
+Episode 1300	Average Score: 0.000
+Episode 1400	Average Score: 0.01
+Episode 1500	Average Score: 0.02
+Episode 1600	Average Score: 0.06
+Episode 1700	Average Score: 0.09
+Episode 1800	Average Score: 0.08
+Episode 1900	Average Score: 0.27
+Episode 2000	Average Score: 0.39
+Episode 2058	Average Score: 0.50
+Environment solved in 1958 episodes!	Average Score: 0.50
 ```
 
 ## Conclusions
