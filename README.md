@@ -11,7 +11,7 @@ A reward of +0.1 is provided for each step if an agent hits the ball over the ne
 The observation space consists of 8 variables corresponding to the position and velocity of the ball and racket. Each agent receives its own, local observation. Two continuous actions are available, corresponding to movement toward (or away from) the net, and jumping.
 
 The task is episodic, and in order to solve the environment, The agents must get an average score of +0.5 (over 100 consecutive episodes, after taking the average over both agents). Specifically,
-* After each episode, the rewards that each agent received  is summed up to get a score for each agent. This yields 2 (potentially different) scores.  The maximum of these 2 scores is taken.
+* After each episode, the rewards that each agent received  is summed up to get a score for each agent. This yields 2 (potentially different) scores.  The average of these 2 scores is taken.
 * This yields a single score for each episode.
 
 The environment is considered solved, when the average (over 100 episodes) of those scores is at least +0.5.
