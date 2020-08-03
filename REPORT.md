@@ -33,7 +33,7 @@ The details of DDPD algorithm described in the fellowing pseuocode
 
 ## Implementation
 
-The model is implemented using torch framework and python 3.  The same actor and same critic are used for two DDPG agents. The actor of DDPG consists of an input, an output and a number of hidden layers:
+The multiagent model is implemented using torch framework and python 3.  The same actor and same critic are used for two DDPG agents. The actor of DDPG consists of an input, an output and a number of hidden layers:
 
 ```
         input = nn.Linear(state_size, actor_units[0])
@@ -114,15 +114,15 @@ Environment solved in 1958 episodes!	Average Score: 0.50
 
 ## Conclusions
 
-DDPG performs very well to achieve the goal. The model can be easily modify to solve the second version of the environment.
-Other actor-critic algorithms can also be used to solve this kind of environment 
+Two DDPG agents perform well to achieve the goal. 
+Other actor-critic algorithms can also be used to build other two agents model, for example 
 
 * A3C - Asynchronous Advantage Actor-Critic
 * A2C - Advantage Actor-Critic
 * PPO - Proximal Policy Optimization
 * D4PG - Distributed Distributional Deterministic Policy Gradients
 
-It is very interesting to compare them with DDPG. Some of them, for example D4PG,  very likely perform better.
+Some of them, for example, using D4PG likely perform better. The two agents model can be simplified by using only one agent. The agent plays with itself and self learns.
 
 
 
