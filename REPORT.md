@@ -41,7 +41,7 @@ The model is implemented using torch framework and python 3.  The same actor and
         hidden_layers = nn.ModuleList([nn.Linear(size_in, size_out) for size_in, size_out in zip(actor_units[:-1], actor_units[1:])])
         output = nn.Linear(actor_units[-1], action_size)
 ```
-where state_size = 33 is the dimension of each state, action_size = 4 is the dimension of each action. actor_units is an array of hidden layer units. The batch normalization 
+where state_size = 24 is the dimension of each state, action_size = 2 is the dimension of each action. actor_units is an array of hidden layer units. The batch normalization 
 is applied to the first layer.
 
 The architecture of the critic  is similar to the actor, consisting of also an input, an output and a number 
