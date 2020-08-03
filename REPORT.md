@@ -85,7 +85,7 @@ The model learns very slow in the first 1500 eposodes. Afterward, it gradually l
 
 ![scores](scores.png)
 
-The average scores per 100 episodes as shown as follows. The model solves the environment after 1985 episodes. The agent receives average score 0.5 over the last 100 episode.  
+The average scores per 100 episodes as shown as follows. The model solves the environment after 1958 episodes. The agent receives average score 0.5 over the last 100 episode.  
 
 ```
 Episode 100	Average Score: -0.00
