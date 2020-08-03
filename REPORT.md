@@ -4,6 +4,16 @@
 
 ## Introduction
 
+This project solves the [Tennis](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis) environment. Two agents are created and trained to control rackets to bounce a ball over a net.. 
+
+![tennis](tennis.gif)
+
+In the Tennis environment, a reward of +0.1 is provided for each step if an agent hits the ball over the net. If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01. Thus, the goal of each agent is to keep the ball in play as long as possible. 
+
+
+The observation space consists of 8 variables corresponding to the position and velocity of the ball and racket. Each agent receives its own, local observation. Two continuous actions are available, corresponding to movement toward (or away from) the net, and jumping.
+
+
 In Reacher environment a reward of +0.1 is provided for each step that the agent's hand is in the goal location. 
 Thus, the goal of the agent is to maintain its position at the target location for as many time steps as possible.
 
