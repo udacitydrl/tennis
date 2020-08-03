@@ -15,7 +15,8 @@ The observation space consists of 8 variables corresponding to the position and 
 
 The environment is considered solved, when the average (over 100 episodes) of those scores is at least +0.5.
 To meet the requires, two agents are created using he Deep Deterministic Policy Gradient algorithm (DDPG) [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971).
-The multiagent model successfully solves the environment after 124 episodes.
+
+The two DDPG agents successfully solve the environment after 124 episodes.
 
 
 ## Brief overview of DDPG algorithm
@@ -36,8 +37,7 @@ The details of DDPD algorithm described in the fellowing pseuocode
 
 ## Implementation
 
-The model is implemented using torch framework and python 3.  The actor of DDPG consists of an input, an output and a number 
-of hidden layers:
+The model is implemented using torch framework and python 3.  The same actor and same critic are used for two DDPG agents. The actor of DDPG consists of an input, an output and a number of hidden layers:
 
 ```
         input = nn.Linear(state_size, actor_units[0])
@@ -87,7 +87,7 @@ Other hyper parameters used in the model are
 ## Results
 The model runs reasonably fast.  The graph shows the rewards per episode 
 
-![scores](score.png)
+![scores](scores.png)
 
 The average scores per 100 episodes as shown as follows. The model solves the environment after 124 episodes. The agent receives average score more than 30 over the last 100 episode.  
 
