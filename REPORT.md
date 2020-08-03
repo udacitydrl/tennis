@@ -10,7 +10,7 @@ In the Tennis environment, a reward of +0.1 is provided for each step if an agen
 The observation space consists of 8 variables corresponding to the position and velocity of the ball and racket. Each agent receives its own, local observation. Two continuous actions are available, corresponding to movement toward (or away from) the net, and jumping.
 
 The environment is considered solved, when the average (over 100 episodes) of those scores is at least +0.5.
-To meet the requires, two agents are created using he Deep Deterministic Policy Gradient algorithm (DDPG) [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971).
+To meet the requires, two agents are created using the Deep Deterministic Policy Gradient algorithm (DDPG) [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971).
 
 The two DDPG agents successfully solve the environment after 1958 episodes.
 
